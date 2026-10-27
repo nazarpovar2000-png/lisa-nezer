@@ -1,0 +1,48 @@
+{
+  "_demo": true,
+  "clientId": "lisa",
+  "catalogVersion": 1,
+  "currency": "USD",
+  "title": { "en": "Remodel estimate", "ru": "Смета на ремонт" },
+  "taxRate": "0.11",
+  "contingencyRate": "0.10",
+  "rooms": [
+    {
+      "id": "kitchen",
+      "title": { "en": "Kitchen", "ru": "Кухня" },
+      "items": [
+        {
+          "id": "kitchen-backsplash",
+          "title": { "en": "Backsplash tile", "ru": "Плитка на фартук" },
+          "description": { "en": "Tile wall behind the counter.", "ru": "Плитка на стене над столешницей." },
+          "photos": [],
+          "levels": {
+            "basic": { "label": { "en": "Basic", "ru": "Базовый" }, "labor": 120000, "materials": 60000 },
+            "standard": { "label": { "en": "Standard", "ru": "Стандарт" }, "labor": 120000, "materials": 80000 },
+            "premium": { "label": { "en": "Premium", "ru": "Премиум" }, "labor": 140000, "materials": 150000 }
+          },
+          "defaultLevel": "standard",
+          "defaultIncluded": true
+        }
+      ]
+    },
+    {
+      "id": "bath",
+      "title": { "en": "Bathroom", "ru": "Ванная" },
+      "items": [
+        {
+          "id": "bath-floor-tile",
+          "title": { "en": "Floor tile", "ru": "Плитка на пол" },
+          "description": { "en": "Floor tile with waterproofing membrane.", "ru": "Плитка на пол с гидроизоляцией." },
+          "photos": [],
+          "levels": {
+            "standard": { "label": { "en": "Standard", "ru": "Стандарт" }, "labor": 90000, "materials": 45000 },
+            "premium": { "label": { "en": "Premium", "ru": "Премиум" }, "labor": 110000, "materials": 130000 }
+          },
+          "defaultLevel": "standard",
+          "defaultIncluded": false
+        }
+      ]
+    }
+  ]
+}
