@@ -1,28 +1,51 @@
 {
   "_demo": true,
   "clientId": "lisa",
-  "catalogVersion": 1,
+  "catalogVersion": 2,
   "currency": "USD",
   "title": { "en": "Remodel estimate", "ru": "Смета на ремонт" },
   "taxRate": "0.11",
   "contingencyRate": "0.10",
   "rooms": [
     {
-      "id": "kitchen",
-      "title": { "en": "Kitchen", "ru": "Кухня" },
+      "id": "shower",
+      "title": { "en": "Shower", "ru": "Душевая" },
       "items": [
         {
-          "id": "kitchen-backsplash",
-          "title": { "en": "Backsplash tile", "ru": "Плитка на фартук" },
-          "description": { "en": "Tile wall behind the counter.", "ru": "Плитка на стене над столешницей." },
+          "id": "shower-remodel",
+          "title": { "en": "Shower remodel", "ru": "Ремонт душевой" },
+          "description": {
+            "en": "Demolition of existing shower; wall tile to ceiling; new valve/faucet; niche; waterproofing; shower floor tile; drain connection. Open: shower head location, shower door.",
+            "ru": "Демонтаж старой душевой; плитка на стены до потолка; новый смеситель; ниша; гидроизоляция; плитка на пол; подключение слива. Открыто: место лейки, дверь в душ."
+          },
           "photos": [],
           "levels": {
-            "basic": { "label": { "en": "Basic", "ru": "Базовый" }, "labor": 120000, "materials": 60000 },
-            "standard": { "label": { "en": "Standard", "ru": "Стандарт" }, "labor": 120000, "materials": 80000 },
-            "premium": { "label": { "en": "Premium", "ru": "Премиум" }, "labor": 140000, "materials": 150000 }
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 295000, "materials": 0 }
           },
-          "defaultLevel": "standard",
+          "defaultLevel": "quote",
           "defaultIncluded": true
+        },
+        {
+          "id": "shower-arch",
+          "title": { "en": "Arch over shower entrance", "ru": "Арка над входом в душ" },
+          "description": { "en": "Optional.", "ru": "Опция." },
+          "photos": [],
+          "levels": {
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 20000, "materials": 0 }
+          },
+          "defaultLevel": "quote",
+          "defaultIncluded": false
+        },
+        {
+          "id": "shower-niche-light",
+          "title": { "en": "Niche with LED lighting", "ru": "Ниша с LED-подсветкой" },
+          "description": { "en": "Optional.", "ru": "Опция." },
+          "photos": [],
+          "levels": {
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 10000, "materials": 0 }
+          },
+          "defaultLevel": "quote",
+          "defaultIncluded": false
         }
       ]
     },
@@ -31,16 +54,170 @@
       "title": { "en": "Bathroom", "ru": "Ванная" },
       "items": [
         {
-          "id": "bath-floor-tile",
-          "title": { "en": "Floor tile", "ru": "Плитка на пол" },
-          "description": { "en": "Floor tile with waterproofing membrane.", "ru": "Плитка на пол с гидроизоляцией." },
+          "id": "bath-remodel",
+          "title": { "en": "Bathroom remodel", "ru": "Ремонт ванной" },
+          "description": {
+            "en": "Demolition of tile, toilet and vanity; new toilet with outlet; new vanity, faucet, light and mirror; new exhaust fan; holders; cabinet over toilet; baseboards; wall repair; floor leveling; tile; repainting.",
+            "ru": "Демонтаж плитки, унитаза и тумбы; новый унитаз с розеткой; новая тумба, смеситель, светильник и зеркало; новая вытяжка; держатели; шкаф над унитазом; плинтусы; ремонт стен; выравнивание пола; плитка; покраска."
+          },
           "photos": [],
           "levels": {
-            "standard": { "label": { "en": "Standard", "ru": "Стандарт" }, "labor": 90000, "materials": 45000 },
-            "premium": { "label": { "en": "Premium", "ru": "Премиум" }, "labor": 110000, "materials": 130000 }
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 338000, "materials": 0 }
           },
-          "defaultLevel": "standard",
+          "defaultLevel": "quote",
+          "defaultIncluded": true
+        },
+        {
+          "id": "bath-heated-floor",
+          "title": { "en": "Heated floor", "ru": "Тёплый пол" },
+          "description": { "en": "Optional.", "ru": "Опция." },
+          "photos": [],
+          "levels": {
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 60000, "materials": 0 }
+          },
+          "defaultLevel": "quote",
           "defaultIncluded": false
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "title": { "en": "Kitchen", "ru": "Кухня" },
+      "items": [
+        {
+          "id": "kitchen-remodel",
+          "title": { "en": "Kitchen remodel", "ru": "Ремонт кухни" },
+          "description": {
+            "en": "Demolition of tile, countertop, backsplash and 3 cabinets; floor leveling and tile; backsplash; baseboards; new light over island and kitchen light; range, dishwasher and refrigerator removed and reinstalled.",
+            "ru": "Демонтаж плитки, столешницы, фартука и 3 шкафов; выравнивание и плитка на пол; фартук; плинтусы; новый светильник над островом и кухонный светильник; демонтаж и установка плиты, посудомойки и холодильника."
+          },
+          "photos": [],
+          "levels": {
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 636000, "materials": 0 }
+          },
+          "defaultLevel": "quote",
+          "defaultIncluded": true
+        },
+        {
+          "id": "kitchen-under-cabinet-light",
+          "title": { "en": "Under-cabinet lighting", "ru": "Подсветка под шкафами" },
+          "description": { "en": "Optional.", "ru": "Опция." },
+          "photos": [],
+          "levels": {
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 20000, "materials": 0 }
+          },
+          "defaultLevel": "quote",
+          "defaultIncluded": false
+        }
+      ]
+    },
+    {
+      "id": "fridge-area",
+      "title": { "en": "Refrigerator area", "ru": "Зона холодильника" },
+      "items": [
+        {
+          "id": "fridge-area-reframe",
+          "title": { "en": "Refrigerator area rework", "ru": "Переделка зоны холодильника" },
+          "description": {
+            "en": "Demolition of walls, cabinets and ventilation; reframing, post and structural reinforcement with metal brackets; ceiling patching, mudding, texture and painting; electrical wiring relocation.",
+            "ru": "Демонтаж стен, шкафов и вентиляции; обрамление, стойка и усиление конструкции с металлическими креплениями; ремонт потолка, шпаклёвка, фактура и покраска; перенос электропроводки."
+          },
+          "photos": [],
+          "levels": {
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 250000, "materials": 0 }
+          },
+          "defaultLevel": "quote",
+          "defaultIncluded": true
+        }
+      ]
+    },
+    {
+      "id": "backyard-door",
+      "title": { "en": "Backyard door", "ru": "Дверь на задний двор" },
+      "items": [
+        {
+          "id": "backyard-door-hinges",
+          "title": { "en": "Move hinges, fix trim, paint", "ru": "Перенос петель, трим, покраска" },
+          "description": { "en": "Move hinges to the opposite side, fix trim, paint after hinge relocation.", "ru": "Перенос петель на противоположную сторону, ремонт трима, покраска после переноса." },
+          "photos": [],
+          "levels": {
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 50000, "materials": 0 }
+          },
+          "defaultLevel": "quote",
+          "defaultIncluded": true
+        }
+      ]
+    },
+    {
+      "id": "master-bedroom",
+      "title": { "en": "Master bedroom", "ru": "Главная спальня" },
+      "items": [
+        {
+          "id": "master-bedroom-lights",
+          "title": { "en": "Ceiling lights", "ru": "Потолочные светильники" },
+          "description": { "en": "Relocate 2 light fixtures, install 2 light fixtures, ceiling patching and painting.", "ru": "Перенос 2 светильников, установка 2 светильников, ремонт и покраска потолка." },
+          "photos": [],
+          "levels": {
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 50000, "materials": 0 }
+          },
+          "defaultLevel": "quote",
+          "defaultIncluded": true
+        }
+      ]
+    },
+    {
+      "id": "dog-room",
+      "title": { "en": "Dog room", "ru": "Комната для собаки" },
+      "items": [
+        {
+          "id": "dog-room-finish",
+          "title": { "en": "Dog room finish", "ru": "Отделка комнаты для собаки" },
+          "description": { "en": "LVP flooring, drywall, mudding and painting.", "ru": "Пол LVP, гипсокартон, шпаклёвка и покраска." },
+          "photos": [],
+          "levels": {
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 120000, "materials": 0 }
+          },
+          "defaultLevel": "quote",
+          "defaultIncluded": true
+        }
+      ]
+    },
+    {
+      "id": "additional",
+      "title": { "en": "Additional work", "ru": "Дополнительные работы" },
+      "items": [
+        {
+          "id": "window-glass-unit",
+          "title": { "en": "Window glass unit replacement", "ru": "Замена стеклопакета окна" },
+          "description": { "en": "Window glass unit.", "ru": "Стеклопакет окна." },
+          "photos": [],
+          "levels": {
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 20000, "materials": 0 }
+          },
+          "defaultLevel": "quote",
+          "defaultIncluded": true
+        },
+        {
+          "id": "door-handles",
+          "title": { "en": "Door handle replacement (6)", "ru": "Замена дверных ручек (6 шт.)" },
+          "description": { "en": "Replacement of 6 door handles.", "ru": "Замена 6 дверных ручек." },
+          "photos": [],
+          "levels": {
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 21000, "materials": 0 }
+          },
+          "defaultLevel": "quote",
+          "defaultIncluded": true
+        },
+        {
+          "id": "dining-room-light",
+          "title": { "en": "Dining room light replacement", "ru": "Замена светильника в столовой" },
+          "description": { "en": "Dining room light fixture.", "ru": "Светильник в столовой." },
+          "photos": [],
+          "levels": {
+            "quote": { "label": { "en": "Contractor quote", "ru": "По расценке подрядчика" }, "labor": 5000, "materials": 0 }
+          },
+          "defaultLevel": "quote",
+          "defaultIncluded": true
         }
       ]
     }
